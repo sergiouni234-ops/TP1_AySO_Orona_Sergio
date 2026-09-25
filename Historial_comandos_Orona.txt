@@ -1,0 +1,106 @@
+ls -l
+pwd
+tree
+sudo apt update
+sudo apt install tree
+tree
+mkdir clase4
+ls -l
+cd clase4
+cd  
+cd clase4/
+ls -l
+mkdir practica
+ls -l
+tree
+touch practica1.txt
+ls -l
+rm practica1.txt 
+ls-l
+ls -l
+cd practica/
+touch practica1.txt
+pwd
+cp practica1.txt practica2.txt 
+ls
+rm practica1.txt 
+mv practica2.txt /home/vagrant/clase4/
+ls -l
+cd ..
+ls -l
+tree
+rmdir practica/
+ls -l
+mkdir facturas pedidos
+tree
+mkdir -p clientes/{facturas,pedidos}
+tree
+mkdir -p {clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p contactos/{clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p Orona/{contactos}/{clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p Orona/contactos/{clientes,proveedores}/{facturas,pedidos}
+tree
+rm {contactos}
+cd Orona
+rm \{contactos\}/
+rm -r \{contactos\}/
+tree
+cd..
+cd ..
+tree
+mkdir -p orona/{mama/hijo{1..3},{papa/hijo{1..3},ahijado}}
+tree
+rm -r orona/
+tree
+mkdir -p Orona/{mama/hijo{1..3},papa/{hijo{1..3},ahijado}}
+tree
+exit
+ssh-keygen -t ed25519
+cat ~/.ssh/id_ed25519.pub
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+cd repogit/
+ls -l
+tree
+cd repogit
+git clone git@github.com:sergiouni234-ops/TP1_AySO_Orona_Sergio.git
+cd TP1_AySO_Orona_Sergio/
+pwd
+ls -l
+cat /etc/os-release 
+man grep
+grep HOME_URL /etc/os-release 
+grep home_url /etc/os-release 
+grep -i Home_url /etc/os-release 
+grep -i Home_url /etc/os-release > datos_url.txt
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+git add .
+git config --global user.email "sergiouni234@gmail.com"
+git config --global user.name "Sergio Orona"
+cd repogit/TP1_AySO_Orona_Sergio/
+git status
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git push
+grep "model name" /proc/cpuinfo | head -n1 >>
+datos_usuario.txt
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "feat: Añadiendo información de CPU"
+git push
+cat <<EOF > README.md
+Alumno: Sergio Orona
+Division: 113
+Turno: Mañana
+EOF
+
+git add README.md datos_usuarios.txt
+git add README.md datos_usuario.txt
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+mkdir -p ~/materia1/{uni1,uni2,uni3} ~/materia2/{uni1,uni2,uni3}
+history -a
