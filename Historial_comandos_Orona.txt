@@ -39,7 +39,6 @@ Division: 113
 Turno: Mañana
 EOF
 
-git add README.md datos_usuarios.txt
 git add README.md datos_usuario.txt
 git commit -m "ADD: Añadiendo Readme y datos de usuario"
 git push
